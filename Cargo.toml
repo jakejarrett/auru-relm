@@ -1,0 +1,16 @@
+[package]
+name = "auru-relm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+adw = { version = "0.6.0", package = "libadwaita",features = ["gtk_v4_12"] }
+gtk = { version = "0.8.2", package = "gtk4", features = ["v4_12", "gnome_46", "gnome_42"] }
+libpanel = "0.4.0"
+relm4 = { version = "0.8", features = ["macros", "libadwaita", "libpanel", "gnome_46", "gnome_42"] }
+# Optional: reusable components
+relm4-components = "0.8"
+# Optional: icons (more info at https://github.com/Relm4/icons)
+# relm4-icons = "0.8.0"
